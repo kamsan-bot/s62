@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
+// Configuración definitiva para tu estructura
 export default defineConfig({
-  root: '.',
-  plugins: [tailwindcss(),react()],
+  root: '.', // raíz actual
+  plugins: [react()],
+  build: {
+    outDir: 'dist',
+  },
+  server: {
+    open: true,
+  },
 })
