@@ -18,9 +18,23 @@ function App() {
   return (
     <>
     <Navbar/>
-    <div>
-
-    </div>
+    <main className='container tw-my-8'>
+      <h1 className='tw-text-2x1 tw-font-bold tw-mb-4'
+      > titulo </h1>
+      <button
+      className=''
+      type='button'
+      data-bs-toogle="tooltip"
+      data-bs-placement="right"
+      >
+        mueve el mouse
+      </button>
+      <section className=''>
+        <Democard/>
+        <Democard/>
+        <Democard/>
+      </section>
+    </main>
     </>
   )
 }
