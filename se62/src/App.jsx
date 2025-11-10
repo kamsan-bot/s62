@@ -35,6 +35,30 @@ function App() {
         <Democard/>
       </section>
     </main>
+
+   <div
+   className='modal fade'
+   id='demonModel'
+   tabIndex="-1"
+   aria-labelledby='demoModalLabel'
+   aria-hidden="true"
+   >
+
+     <div className='modal-dialog'>
+       <div className='modal-content'>
+         <div className='modal-header'>
+           <h1 className='modal-title fs-5'>este es un modal</h1>
+           <button type='button' className='btn-close' data-bs-dismiss="modal" aria-label="cerrar"></button>
+         </div>
+         <div> este es el contenido</div>
+         <div>
+          <button>cerrar</button>
+          <button>guardar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
     </>
   )
 }
